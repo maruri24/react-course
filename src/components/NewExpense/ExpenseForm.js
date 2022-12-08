@@ -16,7 +16,6 @@ const ExpenseForm = () => {
                     <label htmlFor="">Amount</label>
                     <input type="number" min="0.01" setp="0.01" />
                 </div>
-
                 <div className="new-expense__control">
                     <label htmlFor="">Currency</label>
                     <select name="currency" id="currency">
