@@ -1,7 +1,8 @@
 import { getExpenseItems } from "./util";
-import Expenses from "./components/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
+import Expenses from "./components/Expenses/Expenses";
 import logo from "./resources/logo.svg";
-import "./styles/App.css";
+import "./App.css";
 
 function App() {
   const expenses = getExpenseItems();
@@ -12,7 +13,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>MY React APP</h1>
       </header>
-      
+
+      <NewExpense/>
       <Expenses expenses={expenses}/>
     </div>
   );
